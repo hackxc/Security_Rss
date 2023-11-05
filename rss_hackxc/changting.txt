@@ -1,0 +1,15 @@
+66fafe46-3c4d-4836-973f-073c60a7dcd7,Atlassian Confluence Data Center & Server 权限绕过漏洞
+0470b45c-fa96-45b3-91cf-d70e275359bb,F5 BIG-IP TMUI 远程代码执行漏洞
+77f3f588-a9a0-4320-bf15-ab4a878e4acd,cURL/libcURL SOCKS5 缓冲区溢出漏洞
+e6d08524-e16b-47e5-b2b1-dd8f69f37bf3,金山终端安全系统V9.0 SQL注入漏洞
+07c22a95-f35c-434b-9377-978bd0883f27,Citrix NetScaler ADC/NetScaler Gateway 会话令牌泄漏漏洞
+b9f49bb0-9b2f-40eb-921e-2f822b1bc8cd,金蝶 EAS 及 EAS Cloud 远程代码执行漏洞
+de280d34-2a28-436e-9446-c785a5f99422,泛微 E-Office 10 远程代码执行漏洞
+39c1e69a-ee6b-4c80-b740-644710182f5f,用友GRP-U8 /u8qx/bx_historyDataCheck.jsp SQL注入漏洞
+ff7df135-8a40-4bd9-87e2-bf586bdf90c1,用友U8 Cloud /ServiceDispatcherServlet 反序列化漏洞
+6869bbc5-25cb-4883-b9d9-ea297e7cb706,JumpServer堡垒机 会话回放未授权访问漏洞
+6eec0895-432a-471a-9f70-ceb3cc9bb6ff,致远OA 前台任意用户密码修改漏洞
+d3db572b-da11-4ac1-a3de-7f5641c50e13,Apache ActiveMQ 服务端口 远程代码执行漏洞
+7c934f45-a82c-4326-bc85-a48f9f9a2fed,Jeecg-Boot JimuReport testConnection JDBC 远程代码执行漏洞
+1471719b-a3b5-4008-901a-02e9110b5c92,OfficeWeb365 /PW/SaveDraw 任意文件上传漏洞
+bf3c8695-2c06-410d-9736-394fae28f075,大华综合管理平台DSS attachment_downloadByUrlAtt.action 任意文件下载漏洞

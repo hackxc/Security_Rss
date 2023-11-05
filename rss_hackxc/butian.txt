@@ -1,0 +1,20 @@
+2498,记一次 DebugBlocker 程序的分析
+2499,记一次过滤jsp的文件上传
+2492,某次测试从前台登录页到渲染后台功能
+2481,从0到1了解metasploit上线原理
+2491,某系统模板注入分析
+2484,webshell静态免杀的一些思路
+2490,某CMS的RCE漏洞分析&amp;思路扩展（新手学习）
+2488,PHP从零学习到Webshell免杀手册
+2485,金山终端安全系统V9.0 SQL注入漏洞
+2483,[Java安全]Spring SPEL注入总结&amp;&amp;回显技术
+2480,浅谈Maven三方包引入动态链接库排查方法
+2475,闪灵cms高校版代码审计
+2470,充电枪勒索攻击
+2477,微信小程序抓包及测试
+2462,Revisiting a UAC Bypass By Abusing Kerberos Tickets
+2461,S4UTomato - Escalate Service Account To LocalSystem via Kerberos
+2460,How to Forge a Kerberos Ticket by Yourself
+2465,Lilishop 开源商城系统代码审计
+2450,记一次密码重置到后台GetShell
+2459,某cms漏洞浅析
