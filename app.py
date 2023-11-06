@@ -4,7 +4,6 @@ from fake_useragent import UserAgent
 from apscheduler.schedulers.background import BackgroundScheduler
 
 app = Flask(__name__, static_folder='static')
-app.config['SERVER_NAME'] = 'localhost:8001' #设置地址，如果是ip请设置ip
 app.config['APPLICATION_ROOT'] = '/'
 app.config['PREFERRED_URL_SCHEME'] = 'http'
 scheduler = BackgroundScheduler()
@@ -50,7 +49,7 @@ def generate_new_body():
 
         return render_template('index.html', body1=body1, body2=body2, body3=body3, body4=body4, body5=body5, body6=body6, body7=body7, body8=body8,body9=body9)
 
-def update_page(): # 生成新的网页内容，实现自动更新flask
+def update_page(headers): # 生成新的网页内容，实现自动更新flask
     xianzhi()  # 先知文章
     freebuf()  # Freebuf文章
     t00ls()    # T00ls文章
@@ -70,7 +69,8 @@ def update_page(): # 生成新的网页内容，实现自动更新flask
 def index():
     return body #返回最新网页内容
 
-scheduler.add_job(func=update_page, trigger='interval', seconds=10)
+headers = {'User-Agent': UserAgent().random}
+scheduler.add_job(func=update_page, trigger='interval', seconds=600, kwargs={'headers': headers})
 scheduler.start()
 
 def xianzhi():
@@ -223,15 +223,5 @@ def nsfocus():
 
 
 if __name__ == '__main__':
-    headers = {'User-Agent': UserAgent().random}
-    xianzhi()  # 先知文章
-    freebuf()  # Freebuf文章
-    t00ls()  # T00ls文章
-    butian()  # 补天文章
-    weixin()  # 微信文章
-    huoxian()  # 火线文章
-    changting()  # 长亭漏洞库
-    aliyun()  # 阿里云漏洞库
-    nsfocus()  # 绿盟漏洞预警
-    generate_new_body()
+    update_page(headers)
     app.run(host='0.0.0.0', port=8001)  # 启动Flask应用程序
